@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome!</h1>
+        <h3>What do you want to convert?</h3>
+    </header>
+
+    <main>
+        <div id="firstChoice">
+            <span id="Flatrate">Flat-rate</span>
+            <span id="pit">PIT</span>
+            <span id="vat">VAT</span>
+        </div>
+
+        <div id="FlatrateMenu">
+            <h3>Flat-rate</h3>
+            <form>
+                <input id="FlatrateValueInput" placeholder="Write price" type="text">
+                <button id="FlatrateValueSubmit" type="button">Submit</button>
+                <button class="resetBtn" type="submit">Back</button>
+                <div class="result"></div>
+            </form>
+        </div>
+
+
+        <div id="pitMenu">
+            <h3>PIT</h3>
+            <form>
+                <input id="pitValueInput" placeholder="Write price" type="text">
+                <button id="pitValueSubmit" type="button">Submit</button>
+                <button class="resetBtn" type="submit">Back</button>
+                <div class="result"></div>
+            </form>
+        </div>
+
+
+        <div id="vatMenu">
+            <h3>VAT</h3>
+            <form>
+                <input id="vatValueInput" placeholder="Write price" type="text">
+                <button id="vatValueSubmit" type="button">Submit</button>
+                <button class="resetBtn" type="submit">Back</button>
+                <div class="result"></div>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <a href="https://github.com/Bubliksiur">
+            <p>dev: Bubliksiur</p>
+        </a>
+        <p>&copy; all rights reserved</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
