@@ -1,0 +1,131 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border-bottom: 2px solid rgb(176, 176, 176);
+    margin: 20px;
+    text-align: center;
+}
+
+header h3 {
+    text-decoration: underline;
+    color: rgb(115, 0, 255);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 73.5vh;
+}
+
+main #firstChoice span {
+    padding: 2vh 7vw 2vh 7vw;
+    border: 2px solid rgb(176, 176, 176);
+    margin: 2vw;
+    font-weight: bold;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+main span:hover {
+    background-color: rgb(176, 176, 176);
+}
+
+main #firstChoice span:active {
+    padding: 1.7vh 6vw 1.7vh 6vw;
+}
+
+#FlatrateMenu,
+#pitMenu,
+#vatMenu {
+    display: none;
+    border: 2px solid rgb(176, 176, 176);
+    padding: 20px;
+    height: 400px;
+    text-align: center;
+    position: relative;
+}
+
+#FlatrateMenu form,
+#FlatrateMenu h3,
+#FlatrateMenu p,
+#pitMenu form,
+#pitMenu h3,
+#pitMenu p,
+#vatMenu form,
+#vatMenu h3,
+#vatMenu p {
+    position: relative;
+    top: 30%;
+}
+
+#FlatrateMenu input,
+#pitMenu input,
+#vatMenu input {
+    padding: 5px 30px 5px 30px;
+}
+
+#FlatrateMenu button,
+#pitMenu button,
+#vatMenu button {
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+    border: 2px solid rgb(176, 176, 176);
+    transition: 0.2s;
+}
+
+#FlatrateMenu button:hover,
+#pitMenu button:hover,
+#vatMenu button:hover {
+    background-color: rgb(176, 176, 176);
+}
+
+.result {
+    margin: 40px;
+}
+
+.vat-value {
+    color: rgb(115, 0, 255);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    border: 2px solid rgba(0, 0, 0, 0);
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 200px;
+    animation: text-pulse 2s infinite;
+    transition: transform 0.5s ease;
+}
+
+@keyframes text-pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+footer a:hover {
+    border: 2px solid rgb(176, 176, 176);
+}
+
+footer a:active {
+    background-color: rgb(176, 176, 176);
+}
